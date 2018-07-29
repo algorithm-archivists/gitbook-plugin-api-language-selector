@@ -15,6 +15,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
   gitbook.events.on('page.change', function() {
     load();
+    hookUpBuildMenuDropdown();
     update(state);
   });
 
