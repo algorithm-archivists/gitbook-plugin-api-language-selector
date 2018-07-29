@@ -1,0 +1,49 @@
+{
+  "bugs": {
+    "url": "https://github.com/algorithm-archivists/gitbook-plugin-api-language-selector/issues"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.2",
+    "gitbook-plugin-search": "2.2.1",
+    "lodash": "4.17.10",
+    "q": "1.5.1",
+    "q-plus": "0.0.8"
+  },
+  "description": "Dropdown programming language selector for GitBook v3",
+  "devDependencies": {
+    "eslint": "5.2.0",
+    "less": "3.8.0",
+    "less-plugin-clean-css": "1.5.1",
+    "mkdirp": "0.5.1",
+    "npm-run-all": "^4.1.3",
+    "rimraf": "2.6.2",
+    "uglify-js": "3.4.6"
+  },
+  "directories": {},
+  "engines": {
+    "gitbook": ">=3.0.4"
+  },
+  "gitbook": {
+    "properties": {
+      "languages": {
+        "default": [],
+        "description": "List of languages code snippets",
+        "type": "array"
+      }
+    }
+  },
+  "homepage": "https://github.com/algorithm-archivists/gitbook-plugin-api-language-selector#readme",
+  "license": "Apache-2.0",
+  "name": "gitbook-plugin-api-language-selector",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algorithm-archivists/gitbook-plugin-api-language-selector.git"
+  },
+  "scripts": {
+    "build:scripts": "uglifyjs -mc -o assets/api-language-selector.js src/js/api-language-selector.js",
+    "build:styles": "lessc -clean-css src/less/main.less assets/api-language-selector.css",
+    "clean": "rimraf assets && mkdirp assets",
+    "prepare": "run-s clean build:scripts build:styles"
+  },
+  "version": "1.0.0"
+}
