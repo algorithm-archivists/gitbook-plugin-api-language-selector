@@ -1,8 +1,17 @@
 .book-header {
   & .language-picker {
+    & a.btn.toggle-dropdown {
+      @media only screen and (min-device-width : 320px) 
+      and (max-device-width : 568px) and (orientation : portrait) {
+        max-width: 90px;
+        overflow: hidden;
+      }
+    }
+
     & .active-name {
       margin-left: 5px;
     }
+
     & .language-picker-grid {
       background-color:inherit;
       border: inherit;
@@ -15,6 +24,7 @@
       .language-picker-cell {
         padding: 0;
       }
+
       .language-picker-btn {
         display: block;
         height: 30px;
@@ -23,6 +33,7 @@
         vertical-align: middle;
         width: 100px;
       }
+
       .language-picker-cell, .language-picker-btn {
         cursor: pointer;
 
