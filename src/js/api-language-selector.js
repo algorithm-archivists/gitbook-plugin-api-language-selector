@@ -87,7 +87,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     if (state.presentLanguages.length > 0 && state.toolbarBtnId === undefined) {
       // Create toolbar btn
       state.toolbarBtnId = gitbook.toolbar.createButton({
-        icon: 'fa fa-globe',
+        icon: 'fa fa-code',
         label: 'Change language',
         className: 'language-picker',
         dropdown: []
