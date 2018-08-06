@@ -44,5 +44,5 @@
     "clean": "rimraf assets && mkdirp assets",
     "prepare": "run-s clean build:scripts build:styles"
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
