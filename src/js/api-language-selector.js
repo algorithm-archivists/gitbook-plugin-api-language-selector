@@ -118,7 +118,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     });
 
     state.presentLanguages = languages.sort(function(a, b) {
-      return b.name.localeCompare(a.name);
+      return a.name.localeCompare(b.name);
     });
   }
 
