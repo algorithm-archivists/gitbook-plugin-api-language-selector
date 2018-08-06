@@ -1,0 +1,50 @@
+.book {
+  &{
+    .book-header {
+      padding: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border-bottom: 1px solid rgba(0,0,0,.07);
+      transition: left 250ms ease;
+    }
+
+    .page-inner {
+      max-width: 100%;
+      text-align: justify;
+      padding: 0;
+      margin-top: 50px;
+    }
+
+    @media only screen and (min-width: 600px) {      
+    } 
+
+    @media only screen and (min-width: 768px) {
+      .page-inner { max-width: 95%; }
+    } 
+
+    @media only screen and (min-width: 992px) {
+      .page-inner { max-width: 85%; }
+    } 
+
+    @media only screen and (min-width: 1200px) {
+        .page-inner { max-width: 75%; }
+    }
+
+    @media only screen and (min-width: 1440px) {
+        .page-inner { max-width: 60%; }
+    }
+  }
+  &.with-summary {          
+    .book-header {
+      left: 0px;
+    }     
+    @media only screen and (min-width: 600px) { 
+      .book-header {
+        left: 300px;
+      }     
+    } 
+  }
+}

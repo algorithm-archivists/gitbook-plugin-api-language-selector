@@ -1,0 +1,27 @@
+.code-block {
+  margin: @code-method-padding -@code-method-padding;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .code-block-definition {
+    padding: 0 @code-method-padding;
+  }
+
+  .code-block-code {
+    padding: @code-method-padding @code-method-padding @code-method-padding / 2;
+    background-color: @code-code-background;
+    border-top: @code-method-border;
+    border-bottom: @code-method-border;
+
+    pre > code  {
+      .white-space(pre-wrap);
+      word-wrap: break-word;
+    }
+  }
+
+  &:after {
+    clear: both;
+  }
+}
