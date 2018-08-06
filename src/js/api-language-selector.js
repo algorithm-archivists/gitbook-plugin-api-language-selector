@@ -70,7 +70,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
           return language.lang === defaultLanguage.lang;
         })
       ) {
-        var firstLanguage = allowedLanguages[0] || undefined;
+        var firstLanguage = state.presentLanguages[0] || undefined;
         if (firstLanguage) setCurrentLanguage(firstLanguage);
       } else {
         setCurrentLanguage(defaultLanguage);
