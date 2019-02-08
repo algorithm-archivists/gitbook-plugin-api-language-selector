@@ -5,7 +5,7 @@
   "dependencies": {
     "cheerio": "1.0.0-rc.2",
     "gitbook-plugin-search": "2.2.1",
-    "lodash": "4.17.10",
+    "lodash": "4.17.11",
     "q": "1.5.1",
     "q-plus": "0.0.8"
   },
